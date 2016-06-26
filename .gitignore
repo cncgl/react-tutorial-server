@@ -37,7 +37,8 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
->>>>>>> bd8d1c6dd97bc96c5a3551a2d9162c2650f5dca7
 
 # Ignore Byebug command history file.
 .byebug_history
+
+.idea
