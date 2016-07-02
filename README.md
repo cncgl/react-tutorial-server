@@ -1,6 +1,6 @@
 # React Tutorial Server
 
-React Tutorial Client の APIサーバー。
+[React Tutorial Client](https://github.com/cncgl/react-tutorial-client) の APIサーバー。
 
 Rails 5 API モード。
 
