@@ -1,24 +1,34 @@
-# README
+# React Tutorial Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+React Tutorial Client の APIサーバー。
 
-Things you may want to cover:
+Rails 5 API モード。
 
-* Ruby version
+## Install
+```
+$ git clone git@github.com:cncgl/react-tutorial-server.git
+$ cd react-tutorial-server
+$ bundle install --path vendor/bundle
+$ bundle exec rails db:migrate
+```
 
-* System dependencies
+## Prepare
+API を 下記のように api サブドメインで実行する。
 
-* Configuration
+```
+GET http://api.example.com/v1/comments
+```
+ローカルで実行する場合は、hosts に
+```
+127.0.0.1  api.localhost.local
+```
+を追記する。
 
-* Database creation
+## Usage
+```
+$ bundle exec rails s
+```
+ブラウザにて http://api.localhost.local:3000/v1/comments にアクセス 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](LICENSE)
