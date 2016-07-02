@@ -33,5 +33,7 @@ module ReactTutorialServer
         resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :patch, :options]
       end
     end
+
+    config.middleware.use Rack::Attack
   end
 end
